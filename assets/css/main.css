@@ -1,30 +1,26 @@
-/* =========================================================
-   DIMENSION TEMPLATE — LOGO CENTERED FIX (SAFE)
-   Replaces diamond icon with centered logo image
-   Preserves full Dimension layout and animations
-   ========================================================= */
-
+/* HEADER LOGO FIX */
 #header .logo {
-  width: 5.5rem;
-  height: 5.5rem;
-  line-height: 5.5rem;
-  border: solid 1px #ffffff;
-  border-radius: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+	width: 5.5rem;
+	height: 5.5rem;
+	border: solid 1px #ffffff;
+	border-radius: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	overflow: hidden;
 }
 
-#header .logo .icon {
-  width: 100%;
-  height: 100%;
-  background-image: url("../images/logo.png");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
+#header .logo img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	display: block;
 }
 
-/* Remove FontAwesome diamond */
-#header .logo .icon:before {
-  content: none;
+/* BACKGROUND IMAGE */
+#bg:after {
+	background-image: url("../images/bg.JPG");
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
 }
